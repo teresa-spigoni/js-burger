@@ -6,46 +6,76 @@
     <title>burger</title>
   </head>
   <body>
-    <h1>Create Your Burger</h1>
-    <input class="burger-name" type="text" name="burgerName" value="" placeholder="Name Your Hamburger"> <!--required-->
-    <div class="ingredients">
-      <h3>Ingredients</h3>
-      <label for="cheese">Cheese</label>
-      <input type="checkbox" id="cheese" name="cheese" value="cheese">
-      <label for="cheese">add</label>
-      <br>
-      <label for="egg">Egg</label>
-      <input type="checkbox" id="egg" name="egg" value="egg">
-      <label for="egg">add</label>
-      <br>
-      <label for="mustard">Mustard</label>
-      <input type="checkbox" id="mustard" name="mustard" value="mustard">
-      <label for="mustard">add</label>
-      <br>
-      <label for="tomato">Tomato</label>
-      <input type="checkbox" id="tomato" name="tomato" value="tomato">
-      <label for="tomato">add</label>
-      <br>
-      <label for="lettuce">Lettuce</label>
-      <input type="checkbox" id="lettuce" name="lettuce" value="lettuce">
-      <label for="lettuce">add</label>
-      <br>
-      <label for="ketchup">Ketchup</label>
-      <input type="checkbox" id="ketchup" name="ketchup" value="ketchup">
-      <label for="ketchup">add</label>
-      <br>
-    </div>
 
-    <label for="discount">Discount Coupon</label>
-    <input type="text" id="discount" name="discount" value="" placeholder="12354ABCDEF">
+    <!-- Header -->
+    <header>
+      <h1>Create Your Burger</h1>
+    </header>
+    <!-- /Header -->
 
-    <br>
-    <button type="button" name="button">Calculate</button>
-    <div>Your Price</div>
-    <div class="price">Total</div>
+    <!-- Main -->
+    <main>
 
+      <!-- Burger Name -->
+      <input class="burger-name" type="text" name="burgerName" value="" placeholder="Name Your Hamburger"> <!--required-->
+      <!-- /Burger Name -->
 
+      <!-- Ingredients checkboxes -->
+      <div class="ingredients">
+        <h3>Ingredients</h3>
+        <label for="cheese">Cheese</label>
+        <input type="checkbox" id="cheese" name="cheese" value="3">
+        <label for="cheese">add</label>
+        <br>
+        <label for="egg">Egg</label>
+        <input type="checkbox" id="egg" name="egg" value="3">
+        <label for="egg">add</label>
+        <br>
+        <label for="mustard">Mustard</label>
+        <input type="checkbox" id="mustard" name="mustard" value="1">
+        <label for="mustard">add</label>
+        <br>
+        <label for="tomato">Tomato</label>
+        <input type="checkbox" id="tomato" name="tomato" value="2">
+        <label for="tomato">add</label>
+        <br>
+        <label for="lettuce">Lettuce</label>
+        <input type="checkbox" id="lettuce" name="lettuce" value="2">
+        <label for="lettuce">add</label>
+        <br>
+        <label for="ketchup">Ketchup</label>
+        <input type="checkbox" id="ketchup" name="ketchup" value="1">
+        <label for="ketchup">add</label>
+        <br>
+      </div>
+      <!-- /Ingredients checkboxes -->
 
+      <!-- Discount -->
+      <div class="discount-container">
+        <label for="discount">Discount Coupon</label>
+        <input type="text" id="discount" name="discount" value="" placeholder="12354ABCDEF">
+      </div>
+      <!-- /Discount -->
+
+      <br>
+
+      <!-- Calculate Button -->
+      <button type="button" id="button" name="button">Calculate</button>
+      <!-- Calculate Button -->
+
+    </main>
+    <!-- /Main -->
+
+    <!-- Footer -->
+    <footer>
+      <div>Your Price</div>
+      <div id="price">Total</div>
+    </footer>
+    <!-- /Footer -->
+
+    <!-- JS -->
     <script src="js/script.js" charset="utf-8"></script>
+    <!-- /JS -->
+
   </body>
 </html>

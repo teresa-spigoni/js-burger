@@ -7,3 +7,16 @@
 .burger-name{
   border: none;
 }
+
+main{
+  margin: 40px 0;
+}
+
+.burger-name{
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.discount-container{
+  margin-top: 40px;
+}
