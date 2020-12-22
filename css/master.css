@@ -29,7 +29,7 @@ header{
 }
 
 main{
-  height: calc(100vh - 177.5px);
+  height: 575px;
   background: #fff;
   padding: 40px 0;
 }
