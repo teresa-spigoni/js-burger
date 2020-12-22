@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+.flex{
+  display: flex;
+}
+
 body{
   background: #fff5e2;
   font-family: 'Open Sans', sans-serif;
@@ -26,6 +30,8 @@ header{
 
 .burger-name{
   border: none;
+  padding: 10px 0 10px 20px;
+  margin-left: -20px;
 }
 
 main{
@@ -41,10 +47,6 @@ main{
 
 h3{
   margin: 20px 0 10px 0;
-}
-
-.column-container{
-  display: flex;
 }
 
 .column{
@@ -109,7 +111,6 @@ label input[type=checkbox]:checked + .add::before{
 }
 
 .button-container{
-  display: flex;
   justify-content: center;
 }
 
@@ -131,6 +132,5 @@ footer{
 }
 
 .footer-container{
-  display: flex;
   justify-content: space-between;
 }
