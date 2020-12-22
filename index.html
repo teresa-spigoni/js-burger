@@ -1,81 +1,120 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/master.css">
     <meta charset="utf-8">
     <title>burger</title>
   </head>
   <body>
+    <div class="big-container">
+      <!-- Header -->
+      <header>
+        <div class="container header-container">
+          <h1>Create Your Burger</h1>
+        </div>
+      </header>
+      <!-- /Header -->
 
-    <!-- Header -->
-    <header>
-      <h1>Create Your Burger</h1>
-    </header>
-    <!-- /Header -->
+      <!-- Main -->
+      <main>
+        <div class="container">
+          <!-- Burger Name -->
+          <input class="burger-name" type="text" name="burgerName" value="" placeholder="Name Your Burger"> <!--required-->
+          <!-- /Burger Name -->
 
-    <!-- Main -->
-    <main>
+          <!-- Ingredients checkboxes -->
+          <div class="ingredients">
+            <h3>Ingredients</h3>
 
-      <!-- Burger Name -->
-      <input class="burger-name" type="text" name="burgerName" value="" placeholder="Name Your Hamburger"> <!--required-->
-      <!-- /Burger Name -->
+            <div class="column-container">
+              <div class="column">
+                <label for="cheese">
+                  <img src="img/cheese.svg" alt="">
+                  <span>Cheese</span>
+                  <input type="checkbox" id="cheese" name="cheese" value="3">
+                  <span class="add">add</span>
+                </label>
+                <br>
 
-      <!-- Ingredients checkboxes -->
-      <div class="ingredients">
-        <h3>Ingredients</h3>
-        <label for="cheese">Cheese</label>
-        <input type="checkbox" id="cheese" name="cheese" value="3">
-        <label for="cheese">add</label>
-        <br>
-        <label for="egg">Egg</label>
-        <input type="checkbox" id="egg" name="egg" value="3">
-        <label for="egg">add</label>
-        <br>
-        <label for="mustard">Mustard</label>
-        <input type="checkbox" id="mustard" name="mustard" value="1">
-        <label for="mustard">add</label>
-        <br>
-        <label for="tomato">Tomato</label>
-        <input type="checkbox" id="tomato" name="tomato" value="2">
-        <label for="tomato">add</label>
-        <br>
-        <label for="lettuce">Lettuce</label>
-        <input type="checkbox" id="lettuce" name="lettuce" value="2">
-        <label for="lettuce">add</label>
-        <br>
-        <label for="ketchup">Ketchup</label>
-        <input type="checkbox" id="ketchup" name="ketchup" value="1">
-        <label for="ketchup">add</label>
-        <br>
-      </div>
-      <!-- /Ingredients checkboxes -->
+                <label for="egg">
+                  <img src="img/egg.svg" alt="">
+                  <span>Egg</span>
+                  <input type="checkbox" id="egg" name="egg" value="3">
+                  <span class="add">add</span>
+                </label>
+                <br>
 
-      <!-- Discount -->
-      <div class="discount-container">
-        <label for="discount">Discount Coupon</label>
-        <input type="text" id="discount" name="discount" value="" placeholder="12354ABCDEF">
-      </div>
-      <!-- /Discount -->
+                <label for="mustard">
+                  <img src="img/mustard.svg" alt="">
+                  <span>Mustard</span>
+                  <input type="checkbox" id="mustard" name="mustard" value="1">
+                  <span class="add">add</span>
+                </label>
+              </div>
 
-      <br>
+              <div class="column">
+                <label for="tomato">
+                  <img src="img/tomato.svg" alt="">
+                  <span>Tomato</span>
+                  <input type="checkbox" id="tomato" name="tomato" value="2">
+                  <span class="add">add</span>
+                </label>
+                <br>
 
-      <!-- Calculate Button -->
-      <button type="button" id="button" name="button">Calculate</button>
-      <!-- Calculate Button -->
+                <label for="lettuce">
+                  <img src="img/lettuce.svg" alt="">
+                  <span>Lettuce</span>
+                  <input type="checkbox" id="lettuce" name="lettuce" value="2">
+                  <span class="add">add</span>
+                </label>
+                <br>
 
-    </main>
-    <!-- /Main -->
+                <label for="ketchup">
+                  <img src="img/ketchup.svg" alt="">
+                  <span>Ketchup</span>
+                  <input type="checkbox" id="ketchup" name="ketchup" value="1">
+                  <span class="add">add</span>
+                </label>
+              </div>
+            </div>
 
-    <!-- Footer -->
-    <footer>
-      <div>Your Price</div>
-      <div id="price">Total</div>
-    </footer>
-    <!-- /Footer -->
+          </div>
+          <!-- /Ingredients checkboxes -->
 
-    <!-- JS -->
-    <script src="js/script.js" charset="utf-8"></script>
-    <!-- /JS -->
+          <!-- Discount -->
+          <div class="discount-container">
+            <label for="discount">Discount Coupon</label>
+            <input type="text" id="discount" name="discount" value="" placeholder="12354ABCDEF">
+          </div>
+          <!-- /Discount -->
+
+          <br>
+
+          <!-- Calculate Button -->
+          <div class="button-container">
+            <button type="button" id="button" name="button">calculate</button>
+          </div>
+          <!-- Calculate Button -->
+        </div>
+      </main>
+      <!-- /Main -->
+
+      <!-- Footer -->
+      <footer>
+        <div class="container footer-container">
+          <div>Your Price</div>
+          <div id="price">Total</div>
+        </div>
+      </footer>
+      <!-- /Footer -->
+
+      <!-- JS -->
+      <script src="js/script.js" charset="utf-8"></script>
+      <!-- /JS -->
+
+    </div>
 
   </body>
 </html>

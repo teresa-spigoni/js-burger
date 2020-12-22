@@ -40,5 +40,7 @@ document.getElementById('button').addEventListener("click", function() {
     }
 
   }
+
+  cost = cost.toFixed(2);
   price.innerText = '$ ' + cost;
 });
