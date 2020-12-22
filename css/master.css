@@ -46,6 +46,7 @@ h3{
 .column-container{
   display: flex;
 }
+
 .column{
   width: 49%;
   font-size: 12px;
@@ -57,13 +58,40 @@ label img{
   vertical-align: middle;
 }
 
-label input{
-  margin: 0 10px;
+label input[type=checkbox]{
+  visibility: hidden;
 }
 
 .add{
   color: #d33359;
   font-weight: bold;
+  padding-left: 30px;
+  position: relative;
+}
+
+.add:after{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-color: #d33359;
+  border-radius: 4px;
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-60%);
+}
+
+label input[type=checkbox]:checked + .add::before{
+  z-index: 1;
+  content: "\2713";
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+  position: absolute;
+  top: 40%;
+  left: 2px;
+  transform: translateY(-60%);
 }
 
 .discount-container{
@@ -76,7 +104,7 @@ label input{
   width: 60%;
   height: 20px;
   margin-left: 20px;
-  padding: 8px 0 8px 15px;
+  padding: 15px 0 15px 15px;
   border-radius: 5px;
 }
 
