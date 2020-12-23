@@ -26,12 +26,14 @@ body{
 header{
   padding: 40px 0 20px 0;
   background: #fdbb40;
+  position: relative;
 }
 
-.burger-name{
-  border: none;
-  padding: 10px 0 10px 20px;
-  margin-left: -20px;
+.logo {
+  height: 200px;
+  position: absolute;
+  right: -50px;
+  top: -20px;
 }
 
 main{
@@ -41,6 +43,9 @@ main{
 }
 
 .burger-name{
+  border: none;
+  padding: 10px 0 10px 20px;
+  margin-left: -20px;
   font-size: 20px;
   margin-bottom: 10px;
 }
