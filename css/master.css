@@ -4,10 +4,6 @@
   box-sizing: border-box;
 }
 
-.flex{
-  display: flex;
-}
-
 body{
   background: #fff5e2;
   font-family: 'Open Sans', sans-serif;
@@ -23,10 +19,14 @@ body{
   margin: 0 auto;
 }
 
+.flex{
+  display: flex;
+}
+
 header{
+  position: relative;
   padding: 40px 0 20px 0;
   background: #fdbb40;
-  position: relative;
 }
 
 .logo {
@@ -38,16 +38,16 @@ header{
 
 main{
   height: 575px;
-  background: #fff;
   padding: 40px 0;
+  background: #fff;
 }
 
 .burger-name{
-  border: none;
-  padding: 10px 0 10px 20px;
   margin-left: -20px;
-  font-size: 20px;
   margin-bottom: 10px;
+  padding: 10px 0 10px 20px;
+  font-size: 20px;
+  border: none;
 }
 
 h3{
@@ -60,8 +60,8 @@ h3{
 }
 
 label img{
-  margin: 10px 10px 10px 0;
   height: 40px;
+  margin: 10px 10px 10px 0;
   vertical-align: middle;
 }
 
@@ -77,28 +77,28 @@ label input[type=checkbox]{
 }
 
 .add:after{
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-60%);
   display: inline-block;
   width: 16px;
   height: 16px;
   background-color: #d33359;
   border-radius: 4px;
   content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  transform: translateY(-60%);
 }
 
 label input[type=checkbox]:checked + .add::before{
-  z-index: 1;
-  content: "\2713";
-  font-size: 20px;
-  font-weight: bold;
-  color: black;
   position: absolute;
   top: 40%;
   left: 2px;
   transform: translateY(-60%);
+  z-index: 1;
+  content: "\2713";
+  font-size: 20px;
+  font-weight: bold;
+  color: #000;
 }
 
 .discount-container{
@@ -106,13 +106,13 @@ label input[type=checkbox]:checked + .add::before{
 }
 
 .discount-container input{
-  border: none;
-  background: #fff5e2;
   width: 60%;
   height: 20px;
   margin-left: 20px;
   padding: 15px 0 15px 15px;
+  border: none;
   border-radius: 5px;
+  background: #fff5e2;
 }
 
 .button-container{
@@ -123,8 +123,8 @@ label input[type=checkbox]:checked + .add::before{
   text-align: center;
   background: #fdbb40;
   padding: 10px 20px;
-  font-weight: bold;
   font-size: 12px;
+  font-weight: bold;
   border: none;
   border-radius: 5px;
 }

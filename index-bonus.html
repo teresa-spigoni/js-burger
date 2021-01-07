@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&family=Noto+Serif&family=Redressed&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/master-bonus.css">
+    <title>vegan-burgers</title>
+  </head>
+  <body class="c-brown">
+
+    <!-- Big Container -->
+    <div class="big-container">
+
+      <!-- Container -->
+      <div class="container">
+
+        <!-- Header -->
+        <header class="bg-green">
+          <a href="#">
+            <img src="img/logo.jpg" alt="" id="n-logo">
+            <h1>egan Food</h1>
+          </a>
+          <a href="#">
+            <img src="img/logo-right.jpg" alt="" id="r-logo">
+          </a>
+        </header>
+        <!-- /Header -->
+
+        <!-- Navbar -->
+        <nav class="center">
+          <ul>
+            <li>
+              <a href="#">HOME</a>
+            </li>
+            <li>
+              <a href="#">ABOUT US</a>
+            </li>
+            <li>
+              <a href="#">OUR PRODUCTS </a>
+            </li>
+            <li>
+              <a href="#">DEALS</a>
+            </li>
+            <li>
+              <a href="#">CAREERS</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /Navbar -->
+
+        <!-- Main -->
+        <main>
+
+          <!-- Name of the order -->
+          <input type="text" name="order-name" id="order-name" class="c-brown" value="" placeholder="Name Your Order">
+          <!-- /Name of the order -->
+
+          <!-- Creation of the burger -->
+          <h2>Create your burger</h2>
+          <div class="flex j-between">
+
+            <!-- Bread -->
+            <div class="column bg-green x4 bread-type">
+              <h3 class="center">Burger Buns</h3>
+              <div class="breads">
+                <div>
+                  <label for="classic">
+                    <img src="img/classic-bun.jpg" alt="">
+                    <input type="radio" name="bun" id="classic" value="0">
+                    <span class="add"></span>
+                    The Classic
+                  </label>
+                </div>
+                <div>
+                  <label for="sesamo">
+                    <img src="img/sesame-bun.jpg" alt="">
+                    <input type="radio" name="bun" id="sesamo" value="0">
+                    <span class="add"></span>
+                    With Sesame
+                  </label>
+                </div>
+                <div>
+                  <label for="cereali">
+                    <img src="img/cereals-bun.jpg" alt="">
+                    <input type="radio" name="bun" id="cereali" value="0">
+                    <span class="add"></span>
+                    With Cereals
+                  </label>
+                </div>
+                <div>
+                  <label for="rosa">
+                    <img src="img/pink-bun.jpg" alt="">
+                    <input type="radio" name="bun" id="rosa" value="0">
+                    <span class="add"></span>
+                    The Pink
+                  </label>
+                </div>
+                <div>
+                  <label for="nero">
+                    <img src="img/black-bun.jpg" alt="">
+                    <input type="radio" name="bun" id="nero" value="0">
+                    <span class="add"></span>
+                    The Black
+                  </label>
+                </div>
+                <div>
+                  <label for="verde">
+                    <img src="img/green-bun.jpg" alt="">
+                    <input type="radio" name="bun" id="verde" value="0">
+                    <span class="add"></span>
+                    The Green
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Bread -->
+
+            <!-- Burger -->
+            <div class="column bg-green x4 burger-type">
+              <h3 class="center">Burgers</h3>
+              <div class="burgers">
+                <div>
+                  <label for="tofu-burger">
+                    <img src="img/tofu-burger.jpg" alt="">
+                    <input type="radio" name="burger" id="tofu-burger" value="0">
+                    <span class="add"></span>
+                    Tofu Burger
+                  </label>
+                </div>
+                <div>
+                  <label for="seitan-burger">
+                    <img src="img/seitan-burger.jpg" alt="">
+                    <input type="radio" name="burger" id="seitan-burger" value="0">
+                    <span class="add"></span>
+                    Seitan Burger
+                  </label>
+                </div>
+                <div>
+                  <label for="soy-burger">
+                    <img src="img/soy-burger.jpg" alt="">
+                    <input type="radio" name="burger" id="soy-burger" value="0">
+                    <span class="add"></span>
+                    Soy Burger
+                  </label>
+                </div>
+                <div>
+                  <label for="chickpea-burger">
+                    <img src="img/chickpea-burger.jpg" alt="">
+                    <input type="radio" name="burger" id="chickpea-burger" value="0">
+                    <span class="add"></span>
+                    Chickpea Burger
+                  </label>
+                </div>
+                <div>
+                  <label for="spinach-burger">
+                    <img src="img/spinach-burger.jpg" alt="">
+                    <input type="radio" name="burger" id="spinach-burger" value="0">
+                    <span class="add"></span>
+                    Spinach Burger
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Burger -->
+
+            <!-- Additional Ingredients -->
+            <div class="column bg-green x4 additional-ingredients">
+              <h3 class="center">Additional ingredients</h3>
+              <div class="add-ingredients">
+                <div>
+                  <label for="tomato">
+                    <img src="img/tomato.jpg" alt="">
+                    <input type="checkbox" id="tomato" value="0.4">
+                    <span class="add"></span>
+                    Tomato
+                  </label>
+                </div>
+                <div>
+                  <label for="lettuce">
+                    <img src="img/lettuce.jpg" alt="">
+                    <input type="checkbox" id="lettuce" value="0.4">
+                    <span class="add"></span>
+                    Lettuce
+                  </label>
+                </div>
+                <div>
+                  <label for="onion">
+                    <img src="img/onion.jpg" alt="">
+                    <input type="checkbox" id="onion" value="0.3">
+                    <span class="add"></span>
+                    Onion
+                  </label>
+                </div>
+                <div>
+                  <label for="vegan-cheese">
+                    <img src="img/vegan-cheese.jpg" alt="">
+                    <input type="checkbox" id="vegan-cheese" value="1">
+                    <span class="add"></span>
+                    Vegan Cheese
+                  </label>
+                </div>
+                <div>
+                  <label for="cucumbers">
+                    <img src="img/cucumbers.jpg" alt="">
+                    <input type="checkbox" id="cucumbers" value="0.4">
+                    <span class="add"></span>
+                    Cucumbers
+                  </label>
+                </div>
+                <div>
+                  <label for="avocado">
+                    <img src="img/avocado.jpg" alt="">
+                    <input type="checkbox" id="avocado" value="1.2">
+                    <span class="add"></span>
+                    Avocado
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Additional Ingredients -->
+
+            <!-- Sauces -->
+            <div class="column bg-green x4 sauces">
+              <h3 class="center">Sauces</h3>
+              <div class="saucess">
+                <div>
+                  <label for="ketchup">
+                    <img src="img/ketchup.jpg" alt="">
+                    <input type="checkbox" id="ketchup" value="0.3">
+                    <span class="add"></span>
+                    Ketchup
+                  </label>
+                </div>
+                <div>
+                  <label for="mayonnaise">
+                    <img src="img/mayonnaise.jpg" alt="">
+                    <input type="checkbox" id="mayonnaise" value="0.3">
+                    <span class="add"></span>
+                    Vegan Mayonnaise
+                  </label>
+                </div>
+                <div>
+                  <label for="mustard">
+                    <img src="img/mustard.jpg" alt="">
+                    <input type="checkbox" id="mustard" value="0.3">
+                    <span class="add"></span>
+                    Mustard
+                  </label>
+                </div>
+                <div>
+                  <label for="tahini">
+                    <img src="img/tahini.jpg" alt="">
+                    <input type="checkbox" id="tahini" value="0.5">
+                    <span class="add"></span>
+                    Tahini
+                  </label>
+                </div>
+                <div>
+                  <label for="greek-sauce">
+                    <img src="img/greek-sauce.jpg" alt="">
+                    <input type="checkbox" id="greek-sauce" value="0.5">
+                    <span class="add"></span>
+                    Greek Sauce
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Sauces -->
+          </div>
+          <!-- /Creation of the burger -->
+
+          <!-- Side dishes -->
+          <h2>Side Dishes</h2>
+          <div class="flex j-between">
+
+            <!-- Chips -->
+            <div class="column bg-green x3 chips">
+              <h3 class="center">Chips</h3>
+              <div class="chipss">
+                <div>
+                  <label for="stick-potato">
+                    <img src="img/stick-potato.jpg" alt="">
+                    <input type="checkbox" id="stick-potato" value="1.5">
+                    <span class="add"></span>
+                    Stick Potato Chips
+                  </label>
+                </div>
+                <div>
+                  <label for="classic-potato">
+                    <img src="img/classic-potato.jpg" alt="">
+                    <input type="checkbox" id="classic-potato" value="1.5">
+                    <span class="add"></span>
+                    Classic Potato Chips
+                  </label>
+                </div>
+                <div>
+                  <label for="rustic-potato">
+                    <img src="img/rustic-potato.jpg" alt="">
+                    <input type="checkbox" id="rustic-potato" value="1.5">
+                    <span class="add"></span>
+                    Rustic Potato Chips
+                  </label>
+                </div>
+                <div>
+                  <label for="classic-sweet-potato">
+                    <img src="img/classic-sweet-potato.jpg" alt="">
+                    <input type="checkbox" id="classic-sweet-potato" value="2">
+                    <span class="add"></span>
+                    Classic Sweet Potato Chips
+                  </label>
+                </div>
+                <div>
+                  <label for="rustic-carrot">
+                    <img src="img/rustic-carrot.jpg" alt="">
+                    <input type="checkbox" id="rustic-carrot" value="2">
+                    <span class="add"></span>
+                    Rustic Carrot Chips
+                  </label>
+                </div>
+                <div>
+                  <label for="classic-turnip">
+                    <img src="img/classic-turnip.jpg" alt="">
+                    <input type="checkbox" id="classic-turnip" value="2">
+                    <span class="add"></span>
+                    Classic Turnip Chips
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Chips -->
+
+            <!-- Salads -->
+            <div class="column bg-green x3 salads">
+              <h3 class="center">Salads</h3>
+              <div class="saladss">
+                <div>
+                  <label for="green-salad">
+                    <img src="img/green-salad.jpg" alt="">
+                    <input type="checkbox" id="green-salad" value="2">
+                    <span class="add"></span>
+                    Green Salad
+                  </label>
+                </div>
+                <div>
+                  <label for="spelled-salad">
+                    <img src="img/spelled-salad.jpg" alt="">
+                    <input type="checkbox" id="spelled-salad" value="2">
+                    <span class="add"></span>
+                    Spelled Salad
+                  </label>
+                </div>
+                <div>
+                  <label for="beans-salad">
+                    <img src="img/beans-salad.jpg" alt="">
+                    <input type="checkbox" id="beans-salad" value="2">
+                    <span class="add"></span>
+                    Beans Salad
+                  </label>
+                </div>
+                <div>
+                  <label for="vegan-caesar-salad">
+                    <img src="img/vegan-caesar-salad.jpg" alt="">
+                    <input type="checkbox" id="vegan-caesar-salad" value="2">
+                    <span class="add"></span>
+                    Vegan Caesar Salad
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Salads -->
+
+            <!-- Vegetables -->
+            <div class="column bg-green x3 vegetables">
+              <h3 class="center">Vegetables</h3>
+              <div class="vegetabless">
+                <div>
+                  <label for="grilled-mix">
+                    <img src="img/grilled-mix.jpg" alt="">
+                    <input type="checkbox" id="grilled-mix" value="1.5">
+                    <span class="add"></span>
+                    Grilled Vegetables Mix
+                  </label>
+                </div>
+                <div>
+                  <label for="grilled-peppers">
+                    <img src="img/grilled-peppers.jpg" alt="">
+                    <input type="checkbox" id="grilled-peppers" value="1">
+                    <span class="add"></span>
+                    Grilled Peppers
+                  </label>
+                </div>
+                <div>
+                  <label for="grilled-zucchini">
+                    <img src="img/grilled-zucchini.jpg" alt="">
+                    <input type="checkbox" id="grilled-zucchini" value="1">
+                    <span class="add"></span>
+                    Grilled Zucchini
+                  </label>
+                </div>
+                <div>
+                  <label for="grilled-aubergines">
+                    <img src="img/grilled-aubergines.jpg" alt="">
+                    <input type="checkbox" id="grilled-aubergines" value="1">
+                    <span class="add"></span>
+                    Grilled Aubergines
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Vegetables -->
+          </div>
+          <!-- /Side dishes -->
+
+          <!-- Desserts and Drinks -->
+          <h2>Drinks and Desserts</h2>
+          <div class="flex">
+
+            <!-- Drinks -->
+            <div class="column bg-green x3 drinks">
+              <h3 class="center">Drinks</h3>
+              <div class="drinkss">
+                <div>
+                  <label for="water">
+                    <img src="img/water.jpg" alt="">
+                    <input type="checkbox" id="water" value="0.5">
+                    <span class="add"></span>
+                    Water
+                  </label>
+                </div>
+                <div>
+                  <label for="sparkling-water">
+                    <img src="img/sparkling-water.jpg" alt="">
+                    <input type="checkbox" id="sparkling-water" value="0.5">
+                    <span class="add"></span>
+                    Sparkling Water
+                  </label>
+                </div>
+                <div>
+                  <label for="pineapple-extract">
+                    <img src="img/pineapple-extract.jpg" alt="">
+                    <input type="checkbox" id="pineapple-extract" value="1.5">
+                    <span class="add"></span>
+                    Pineapple Extract
+                  </label>
+                </div>
+                <div>
+                  <label for="orange-juice">
+                    <img src="img/orange-juice.jpg" alt="">
+                    <input type="checkbox" id="orange-juice" value="1">
+                    <span class="add"></span>
+                    Orange Juice
+                  </label>
+                </div>
+                <div>
+                  <label for="red-fruit-smoothie">
+                    <img src="img/red-fruit-smoothie.jpg" alt="">
+                    <input type="checkbox" id="red-fruit-smoothie" value="1.5">
+                    <span class="add"></span>
+                    Red Fruit Smoothie
+                  </label>
+                </div>
+                <div>
+                  <label for="coca-cola">
+                    <img src="img/coca-cola.jpg" alt="">
+                    <input type="checkbox" id="coca-cola" value="1">
+                    <span class="add"></span>
+                    Coca-Cola
+                  </label>
+                </div>
+                <div>
+                  <label for="fanta">
+                    <img src="img/fanta.jpg" alt="">
+                    <input type="checkbox" id="fanta" value="1">
+                    <span class="add"></span>
+                    Fanta
+                  </label>
+                </div>
+                <div>
+                  <label for="sprite">
+                    <img src="img/sprite.jpg" alt="">
+                    <input type="checkbox" id="sprite" value="1">
+                    <span class="add"></span>
+                    Sprite
+                  </label>
+                </div>
+                <div>
+                  <label for="raw-beer">
+                    <img src="img/raw-beer.jpg" alt="">
+                    <input type="checkbox" id="raw-beer" value="1.5">
+                    <span class="add"></span>
+                    Raw Beer
+                  </label>
+                </div>
+                <div>
+                  <label for="coffee">
+                    <img src="img/coffee.jpg" alt="">
+                    <input type="checkbox" id="coffee" value="0.5">
+                    <span class="add"></span>
+                    Coffee
+                  </label>
+                </div>
+              </div>
+            </div>
+            <!-- /Drinks -->
+            <!-- Desserts -->
+            <div class="column bg-green x3 desserts">
+              <h3 class="center">Desserts</h3>
+              <div class="dessertss">
+                <div>
+                  <label for="apple-pie">
+                    <img src="img/apple-pie.jpg" alt="">
+                    <input type="checkbox" id="apple-pie" value="2">
+                    <span class="add"></span>
+                    Vegan Apple Pie
+                  </label>
+                </div>
+                <div>
+                  <label for="cheesecake">
+                    <img src="img/cheesecake.jpg" alt="">
+                    <input type="checkbox" id="cheesecake" value="2">
+                    <span class="add"></span>
+                    Vegan Cheesecake
+                  </label>
+                </div>
+                <div>
+                  <label for="sacher">
+                    <img src="img/sacher.jpg" alt="">
+                    <input type="checkbox" id="sacher" value="2.5">
+                    <span class="add"></span>
+                    Vegan Sacher
+                  </label>
+                </div>
+                <div>
+                  <label for="raw-cake">
+                    <img src="img/raw-cake.jpg" alt="">
+                    <input type="checkbox" id="raw-cake" value="3">
+                    <span class="add"></span>
+                    Chocolate Raw Cake
+                  </label>
+                </div>
+                <div>
+                  <label for="raw-ice-cream">
+                    <img src="img/raw-ice-cream.jpg" alt="">
+                    <input type="checkbox" id="raw-ice-cream" value="3.5">
+                    <span class="add"></span>
+                    Raw Vegan Ice-cream
+                  </label>
+                </div>
+
+              </div>
+            </div>
+            <!-- /Desserts -->
+          </div>
+          <!-- /Desserts and Drinks -->
+
+          <!-- Fruit -->
+          <div class="fruit">
+            Do you want to add seasonal fruit to your order?
+            <label for="yes">
+              <input type="radio" name="fruit" id="yes" value="1">
+              <span class="add"></span>
+              Yes
+            </label>
+            <label for="no">
+              <input type="radio" name="fruit" id="no" value="0">
+              <span class="add"></span>
+              No
+            </label>
+          </div>
+          <!-- /Fruit -->
+
+          <!-- Button -->
+          <div>
+            <button type="button" name="button" id="button" class="bg-green">calculate</button>
+          </div>
+          <!-- /Button -->
+
+        </main>
+        <!-- /Main -->
+
+        <!-- Coupon and final price -->
+        <div class="flex j-between coupon-price bg-green">
+          <!-- Discount -->
+          <div>
+            <label for="coupon" id="couponlabel">DISCOUNT COUPON:</label>
+            <input type="text" name="coupon" id="coupon" value="" placeholder="ENTER YOUR DISCOUNT COUPON">
+          </div>
+          <!-- /Discount -->
+          <!-- Final Price -->
+          <span id="total"></span>
+          <!-- /Final Price -->
+        </div>
+        <!-- /Coupon and final price -->
+
+        <!-- Footer -->
+        <footer>
+          <!-- Social -->
+          <div class="social center bg-green">
+            <ul>
+              <li>
+                <a href="#"><i class="fa fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa fa-youtube-play"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- /Social -->
+          <!-- Sign -->
+          <div class="sign center">
+            <a href="#" class="c-brown">Powered by Teresa Spigoni</a>
+          </div>
+          <!-- /Sign -->
+        </footer>
+        <!-- /Footer -->
+
+        <!-- Script -->
+        <script src="js/script-bonus.js" charset="utf-8"></script>
+        <!-- /Script -->
+
+      </div>
+      <!-- /Container -->
+
+    </div>
+    <!-- /Big Container -->
+
+  </body>
+</html>
