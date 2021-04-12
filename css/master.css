@@ -1,3 +1,4 @@
+/* Utility Classes */
 *{
   margin: 0;
   padding: 0;
@@ -23,6 +24,7 @@ body{
   display: flex;
 }
 
+/* Header Classes */
 header{
   position: relative;
   padding: 40px 0 20px 0;
@@ -36,6 +38,7 @@ header{
   top: -20px;
 }
 
+/* Main Classes */
 main{
   height: 575px;
   padding: 40px 0;
@@ -129,6 +132,7 @@ label input[type=checkbox]:checked + .add::before{
   border-radius: 5px;
 }
 
+/* Footer Classes */
 footer{
   padding: 20px 0;
   background: #d33359;

@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="css/master.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="img/favicon.ico" class="favicon">
     <meta charset="utf-8">
     <title>burger</title>
   </head>
@@ -11,26 +15,24 @@
 
     <div class="big-container">
 
-      <!-- Header -->
+      <!-- Header Section -->
       <header>
         <div class="container header-container">
           <h1>Create Your Burger</h1>
+          <img src="img/burger-logo.png" alt="" class="logo">
         </div>
-        <img src="img/burger-logo.png" alt="" class="logo">
       </header>
-      <!-- /Header -->
 
-      <!-- Main -->
+      <!-- Main Section -->
       <main>
 
         <div class="container">
 
-          <!-- Burger Name -->
-          <input class="burger-name" type="text" name="burgerName" value="" placeholder="Name Your Burger"> <!--required-->
-          <!-- /Burger Name -->
+          <!-- Burger Name Input -->
+          <input class="burger-name" type="text" name="burgerName" value="" placeholder="Name Your Burger"> 
 
-          <!-- Ingredients checkboxes -->
-          <div class="ingredients">
+          <!-- Ingredients Section -->
+          <section class="ingredients">
             <h3>Ingredients</h3>
             <div class="flex">
 
@@ -85,41 +87,35 @@
               </div>
 
             </div>
-          </div>
-          <!-- /Ingredients checkboxes -->
+          </section>
 
-          <!-- Discount -->
+          <!-- Discount Input -->
           <div class="discount-container">
             <label for="discount">Discount Coupon</label>
             <input type="text" id="discount" name="discount" value="" placeholder="12354ABCDEF">
           </div>
-          <!-- /Discount -->
 
           <br>
 
-          <!-- Calculate Button -->
+          <!-- Calculator Button -->
           <div class="button-container flex">
             <button type="button" id="button" name="button">calculate</button>
           </div>
-          <!-- Calculate Button -->
 
         </div>
         
       </main>
-      <!-- /Main -->
 
-      <!-- Footer -->
+      <!-- Footer Section -->
       <footer>
         <div class="container footer-container flex">
           <div>Your Price</div>
           <div id="price">$ 2.00</div>
         </div>
       </footer>
-      <!-- /Footer -->
 
-      <!-- JS -->
+      <!-- Script -->
       <script src="js/script.js" charset="utf-8"></script>
-      <!-- /JS -->
 
     </div>
 
