@@ -1,3 +1,4 @@
+/* Utility Classes */
 * {
   margin: 0;
   padding: 0;
@@ -19,7 +20,6 @@ body {
   box-shadow: 0px 0px 100px rgba(93, 63, 63, 0.5);
 }
 
-/* utility */
 .flex {
   display: flex;
 }
@@ -72,7 +72,7 @@ header, label, #tot, #total {
 nav ul li a:hover, .social ul li a:hover {
   color: #5e403f;
 }
-/* /utility */
+/* Header Classes */
 
 header {
   position: relative;
@@ -115,6 +115,7 @@ h1 {
   border-radius: 50%;
 }
 
+/* Navbar Classes */
 nav {
   height: 50px;
   padding: 30px;
@@ -131,6 +132,7 @@ nav ul li a {
   text-decoration: none;
 }
 
+/* Main Classes */
 main {
   position: relative;
   padding: 30px;
@@ -228,6 +230,7 @@ label input {
   background: #b4cc50;
 }
 
+/* Coupon and Price Classes */
 .coupon-price {
   position: relative;
   height: 100px;
@@ -260,6 +263,7 @@ label input {
   font-size: 40px;
 }
 
+/* Footer Classes */
 .social {
   height: 60px;
 }
